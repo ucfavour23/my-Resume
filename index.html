@@ -7,6 +7,7 @@
   <title>Index - UC Favour Hyginus</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+ 
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -37,6 +38,16 @@
 </head>
 
 <body class="index-page">
+  <script>
+  fetch('https://9aejkw56c7.execute-api.us-east-1.amazonaws.com/staging/count', {
+  method: 'POST'
+})
+.then(response => response.json())
+.then(data => {
+  document.getElementById('visitor-count').innerText = data.views;
+})
+.catch(error => console.error('Error:', error));
+</script>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -49,6 +60,7 @@
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Uchechi Favour Hyginus</h1>
+       
     </a>
 
     <div class="social-links text-center">
@@ -99,6 +111,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Uchechi Favour Hyginus</h2>
         <p>I'm a <span class="typed" data-typed-items="Technical Support engineer, Customer Support specialist, Freelancer,cloud Support Engineer, Security Engineer "> </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>Visitor count: <span id="visitor-count">Loading...</span></p>
       </div>
 
     </section><!-- /Hero Section -->
