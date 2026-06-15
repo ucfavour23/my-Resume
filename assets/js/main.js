@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -50,6 +42,12 @@
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
+    setTimeout(() => {
+      if (document.body.contains(preloader)) {
+        preloader.remove();
+      }
+    }, 1500);
+
     window.addEventListener('load', () => {
       preloader.remove();
     });

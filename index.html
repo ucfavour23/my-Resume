@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - UC Favour Hyginus</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Uchechi Favour Hyginus - Cloud Support & Technical Support Portfolio</title>
+  <meta content="Cloud Support and Technical Support portfolio for Uchechi Favour Hyginus, showcasing AWS, Linux, Terraform, monitoring, documentation, and customer support projects." name="description">
+  <meta content="Cloud Support Engineer, Technical Support, AWS, Linux, Terraform, CloudWatch, Ubuntu, Portfolio" name="keywords">
  
 
   <!-- Favicons -->
@@ -27,16 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<link href="assets/css/main.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -48,7 +39,12 @@
 .then(data => {
   document.getElementById('visitor-count').innerText = data.views;
 })
-.catch(error => console.error('Error:', error));
+.catch(() => {
+  const visitorCount = document.getElementById('visitor-count');
+  if (visitorCount) {
+    visitorCount.innerText = 'Unavailable';
+  }
+});
 </script>
 
   <header id="header" class="header dark-background d-flex flex-column">
@@ -96,10 +92,6 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <ul>
-          
-          </ul>
-        </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -115,8 +107,13 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Uchechi Favour Hyginus</h2>
-        <p>I'm a <span class="typed" data-typed-items="Technical Support engineer, Customer Support specialist, Freelancer,cloud Support Engineer, Security Engineer "> </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <p>Visitor count: <span id="visitor-count">Loading...</span></p>
+        <p>I'm a <span class="typed" data-typed-items="Technical Support Engineer, Cloud Support Engineer, Linux Operations Specialist, AWS Monitoring Engineer"> </span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p class="hero-summary">I help teams troubleshoot user issues, document technical workflows, and support AWS environments with clear operational evidence.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="hero-btn primary"><i class="bi bi-images"></i> View Projects</a>
+          <a href="#contact" class="hero-btn secondary"><i class="bi bi-envelope"></i> Contact Me</a>
+        </div>
+        <p class="visitor-counter">Visitor count: <span id="visitor-count">Loading...</span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -124,55 +121,52 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About Me</h2>
-<p>
-I provide technical support and cloud solutions that help businesses resolve issues quickly,
-maintain stable systems, and deliver reliable user experiences.
-</p>
-      </div><!-- End Section Title -->
+        <p>
+          I support users, troubleshoot technical issues, and build documented AWS projects that show practical cloud operations skills.
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Uchechi Favour Hyginus">
           </div>
           <div class="col-lg-8 content">
-            <h2>Technical Support &amp; Cloud Support Specialist.</h2>
+            <h2>Technical Support &amp; Cloud Support Specialist</h2>
             <p class="fst-italic py-3">
-              Delivering Technical Support and Cloud Solutions withReal-World Experience
+              AWS, Linux, monitoring, documentation, and user-focused technical support.
             </p>
+
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>ucfavourcloud.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 703030 6473</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 703 030 6473</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lagos, Nigeria</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong></strong> <span></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Focus:</strong> <span>Cloud Support &amp; Technical Support</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>B.Ed. in progress</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ucfavour23@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
               </div>
             </div>
+
             <p class="py-3">
-           <p>
-I am Uchechi Favour Hyginus, a Technical Support and Cloud Support professional focused on helping users and businesses solve technical problems efficiently.
-
-I have hands-on experience working with AWS services such as IAM, VPC, EC2, and S3, where I have built and deployed real-world cloud projects including secure identity management, virtual network architecture, and a live portfolio website.
-
-With a strong background in customer support and project coordination, I am skilled in troubleshooting issues, managing tickets, and delivering clear, user-focused solutions. I combine technical knowledge with communication and problem-solving skills to ensure reliable and structured support.
-
-I am passionate about cloud technology, technical troubleshooting, and continuously improving my skills through practical projects and real-world experience.
-</p>
+              I am a Technical Support and Cloud Support professional with experience in customer support, ticket handling, documentation, project coordination, and practical AWS implementation.
+            </p>
+            <p>
+              My portfolio includes AWS IAM and Identity Center, VPC networking, S3 website hosting, EC2 web server deployment, CloudWatch monitoring, SNS alerting, Terraform infrastructure, Ubuntu operations, Docker, and CI validation.
+            </p>
+            <p>
+              I bring a support mindset to cloud work: clear communication, evidence-based troubleshooting, organized handover notes, and reliable follow-up.
+            </p>
           </div>
         </div>
-
       </div>
 
     </section><!-- /About Section -->
@@ -188,9 +182,9 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
   <div class="col-lg-3 col-md-6">
     <div class="stats-item">
       <i class="bi bi-emoji-smile"></i>
-      <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2"></span>+
+      <span class="purecounter" data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2"></span>+
       <p><strong>Projects Delivered</strong><br>
-      Designed and deployed AWS cloud solutions including IAM setup, VPC architecture, and website hosting.</p>
+      Designed and deployed AWS cloud solutions covering IAM, VPC, EC2, S3, CloudWatch monitoring, alerting, and load-balanced Ubuntu platforms.</p>
     </div>
   </div>
 
@@ -224,116 +218,71 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
     </div>
   </div>
 
-</div><!-- /Stats Section -->
+</div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
 
     <!-- Skills Section -->
-   <section id="skills" class="skills section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>
-      I combine technical support experience with hands-on cloud knowledge to troubleshoot issues,
-      manage systems, and support users effectively. Below is a clear view of my technical strengths
-      and the core skills I bring to customer and technical support roles.
-    </p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row">
-
-      <!-- LEFT SIDE: TECHNICAL SKILLS -->
-      <div class="col-lg-6">
-        <h4 style="margin-bottom: 20px;">Technical Skills</h4>
-
-        <div class="progress">
-          <span class="skill"><span>AWS (EC2, S3, IAM, VPC)</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Technical Troubleshooting</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Helpdesk & Ticketing (Zendesk)</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Linux (Command Line)</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Terraform (Infrastructure as Code)</span> <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
+    <section id="skills" class="skills section light-background">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>
+          A practical support and cloud operations skill set built around troubleshooting, AWS services, Linux systems, documentation, and user communication.
+        </p>
       </div>
 
-      <!-- RIGHT SIDE: CORE / SOFT SKILLS -->
-      <div class="col-lg-6">
-        <h4 style="margin-bottom: 20px;">Core Skills</h4>
-
-        <div class="progress">
-          <span class="skill"><span>Customer Support</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Email & Ticket Support</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Problem Solving</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Communication</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill"><span>Time Management & Organization</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-            </div><!-- End Skills Item -->
-
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 skill-groups">
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-cloud-check"></i>
+              <h4>Cloud & Infrastructure</h4>
+              <p>AWS EC2, S3, IAM, VPC, CloudWatch, SNS, Application Load Balancer, Auto Scaling, Terraform.</p>
+            </div>
           </div>
 
-        </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-terminal"></i>
+              <h4>Linux & Operations</h4>
+              <p>Ubuntu server support, Bash scripts, NGINX, systemd checks, log cleanup, Docker, deployment validation.</p>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-activity"></i>
+              <h4>Monitoring & Troubleshooting</h4>
+              <p>CloudWatch alarms, health checks, dashboard evidence, incident visibility, root-cause investigation, support handover.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-headset"></i>
+              <h4>Technical Support</h4>
+              <p>Ticket handling, user support, issue triage, clear escalation notes, follow-up, and customer communication.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-journal-text"></i>
+              <h4>Documentation</h4>
+              <p>Deployment guides, runbooks, screenshots, validation records, troubleshooting notes, and process documentation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100">
+              <i class="bi bi-kanban"></i>
+              <h4>Workflow Tools</h4>
+              <p>Zendesk, ClickUp, Trello, Asana, Monday.com, Git, GitHub, GitHub Actions, and structured task coordination.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section><!-- /Skills Section -->
@@ -345,9 +294,8 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
   <div class="container section-title text-center" data-aos="fade-up">
     <h2>Resume</h2>
     <p>
-      My background combines customer support, technical support, cloud training, and project coordination.
-      Through hands-on learning and real projects, I have built practical experience in troubleshooting,
-      AWS cloud services, documentation, and supporting users effectively.
+      My background combines customer support, technical troubleshooting, AWS cloud projects, Linux operations, and project coordination.
+      I focus on solving issues clearly, documenting technical work, and supporting reliable cloud environments.
     </p>
   </div><!-- End Section Title -->
 
@@ -395,8 +343,7 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2023</h5>
           <p><em>Digital Witch Support Community</em></p>
           <p>
-            Gained foundational knowledge in IT support, troubleshooting, software support,
-            and customer service.
+            Built foundational IT support skills across troubleshooting, software support, customer communication, and structured issue handling.
           </p>
         </div><!-- End Resume Item -->
 
@@ -405,8 +352,7 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2025</h5>
           <p><em>Digital Witch Support Community</em></p>
           <p>
-            Completed hands-on cloud training focused on AWS fundamentals, Identity and Access Management (IAM),
-            and basic cloud architecture implementation.
+            Completed hands-on cloud training focused on AWS fundamentals, IAM, access management, and cloud architecture implementation.
           </p>
         </div><!-- End Resume Item -->
 
@@ -415,8 +361,7 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2026</h5>
           <p><em>Torilo Academy, Ikeja</em></p>
           <p>
-            Expanded practical cloud skills through project-based learning, including AWS services,
-            virtual network setup, deployment, and secure cloud solutions.
+            Expanded practical cloud skills through project-based work covering AWS services, virtual networking, deployment, monitoring, and secure cloud operations.
           </p>
         </div><!-- End Resume Item -->
       </div>
@@ -430,10 +375,10 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2025 - Present</h5>
           <p><em>Digital Witch Community</em></p>
           <ul>
-            <li>Completed AWS IAM, Identity Center, and Organizations setup with SSO and MFA configuration.</li>
-            <li>Designed and deployed a virtual network architecture using AWS VPC.</li>
-            <li>Built and deployed a personal portfolio website on AWS S3.</li>
-            <li>Strengthened hands-on skills in troubleshooting, cloud deployment, and documentation.</li>
+            <li>Configured AWS IAM, Identity Center, Organizations, SSO, MFA, users, groups, roles, and permission sets for secure access control.</li>
+            <li>Designed AWS VPC network foundations with public/private subnet separation, route tables, internet gateway, NAT access, and security groups.</li>
+            <li>Built AWS monitoring projects using Terraform, Ubuntu, CloudWatch, SNS, Docker, GitHub Actions, and dashboard evidence.</li>
+            <li>Documented deployment steps, troubleshooting notes, screenshots, validation evidence, and operational handover details.</li>
           </ul>
         </div><!-- End Resume Item -->
 
@@ -442,10 +387,10 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2023 - 2025</h5>
           <p><em>Digital Witch Support Community & Nearers.com</em></p>
           <ul>
-            <li>Provided IT support and troubleshooting for users across software and CRM platforms.</li>
-            <li>Managed multiple project tasks while working under pressure and meeting deadlines.</li>
-            <li>Documented processes and coordinated teams to keep projects organized.</li>
-            <li>Used tools such as ClickUp, Trello, Asana, and Monday.com for task tracking and collaboration.</li>
+            <li>Provided user support and troubleshooting across software, CRM, and digital work platforms.</li>
+            <li>Coordinated tasks, deadlines, and follow-ups across multiple projects and support requests.</li>
+            <li>Created process notes and status updates to keep teams aligned on next steps and ownership.</li>
+            <li>Used ClickUp, Trello, Asana, and Monday.com for task tracking, collaboration, and workflow visibility.</li>
           </ul>
         </div><!-- End Resume Item -->
 
@@ -454,10 +399,10 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
           <h5>2023 - Present</h5>
           <p><em>Elbe Pharm</em></p>
           <ul>
-            <li>Respond to customer inquiries and provide clear support on products and services.</li>
-            <li>Handle complaints and follow up on issues to ensure customer satisfaction.</li>
-            <li>Support daily administrative tasks and maintain organized records.</li>
-            <li>Communicate clearly with customers and team members to ensure smooth operations.</li>
+            <li>Respond to customer inquiries and provide clear support on products, services, and order-related questions.</li>
+            <li>Handle complaints, track follow-ups, and communicate next steps to improve customer satisfaction.</li>
+            <li>Maintain organized records and support daily administrative workflows.</li>
+            <li>Communicate clearly with customers and team members to keep operations moving smoothly.</li>
           </ul>
         </div><!-- End Resume Item -->
       </div>
@@ -470,207 +415,155 @@ I am passionate about cloud technology, technical troubleshooting, and continuou
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Cloud Projects Portfolio</h2>
-<p>
-I build and document <strong>real-world cloud solutions</strong> using AWS, focusing on 
-<strong>deployment, security, automation, and troubleshooting</strong>.
-</p>
-      </div><!-- End Section Title -->
+        <p>
+          Practical AWS and Linux operations projects with infrastructure, monitoring, automation,
+          troubleshooting evidence, and clear deployment documentation.
+        </p>
+      </div>
 
       <div class="container">
+        <div class="featured-projects row gy-4" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <article class="featured-project-card h-100">
+              <a href="medcare-ubuntu-ops-monitoring.html" class="featured-project-image">
+                <img src="assets/img/portfolio/medcare-ubuntu-ops-monitoring/dashboard-local.png" alt="MedCare Ubuntu operations dashboard screenshot">
+              </a>
+              <div class="featured-project-body">
+                <div class="project-eyebrow">Featured AWS Operations Project</div>
+                <h3>MedCare Ubuntu Operations & Monitoring Platform</h3>
+                <p>
+                  MedCare needed operational visibility for Ubuntu servers supporting internal healthcare apps.
+                  I built a dashboard, alerting workflow, automated checks, and support evidence trail.
+                </p>
+                <div class="project-tags">
+                  <span>AWS EC2</span><span>CloudWatch</span><span>SNS</span><span>Terraform</span><span>Docker</span><span>Flask</span>
+                </div>
+                <div class="project-actions">
+                  <a href="medcare-ubuntu-ops-monitoring.html" class="btn-project"><i class="bi bi-images"></i> View Evidence</a>
+                  <a href="https://github.com/ucfavour23/medcare-ubuntu-ops-monitoring" target="_blank" class="btn-project-outline"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
+          <div class="col-lg-6">
+            <article class="featured-project-card h-100">
+              <a href="aws-ubuntu-monitoring-platform.html" class="featured-project-image">
+                <img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Load-Balancer.png" alt="AWS Ubuntu monitoring platform load balancer screenshot">
+              </a>
+              <div class="featured-project-body">
+                <div class="project-eyebrow">Featured Infrastructure Project</div>
+                <h3>NovaRetail AWS Ubuntu Monitoring Platform</h3>
+                <p>
+                  NovaRetail needed a resilient monitoring app platform as internal usage increased.
+                  I built load-balanced Ubuntu infrastructure with Auto Scaling, health checks, and CloudWatch monitoring.
+                </p>
+                <div class="project-tags">
+                  <span>Terraform</span><span>ALB</span><span>Auto Scaling</span><span>Ubuntu</span><span>Node.js</span><span>CloudWatch</span>
+                </div>
+                <div class="project-actions">
+                  <a href="aws-ubuntu-monitoring-platform.html" class="btn-project"><i class="bi bi-images"></i> View Evidence</a>
+                  <a href="https://github.com/ucfavour23/aws-ubuntu-monitoring-platform" target="_blank" class="btn-project-outline"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-  <!-- Project 1 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Project 1</h4>
-        <p>AWS IAM & Identity Center</p>
-        <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="iam-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- EC2 NGINX Project -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/nginx-webserver-successfully-deployed.png" class="img-fluid" alt="EC2 NGINX Deployment">
-      <div class="portfolio-info">
-        <h4>EC2 NGINX Deployment</h4>
-        <p>Terraform + Ansible</p>
-        <a href="assets/img/portfolio/nginx-webserver-successfully-deployed.png" title="EC2 Project" data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="ec2-nginx-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- Project 2 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Cloud Projects</h4>
-        <p>AWS IAM & Identity Center implementation</p>
-        <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="vpc-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- Project 3 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>AWS Security</h4>
-        <p>AWS Organizations & Access Management</p>
-        <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="organization-access-management.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- Project 4 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Documentation</h4>
-        <p>AWS Project Documentation</p>
-        <a href="assets/img/portfolio/books-1.jpg" title="Documentation" data-gallery="portfolio-gallery-books" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="documentation-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-
-<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-  <!-- Project 1 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Project 1</h4>
-        <p>AWS IAM & Identity Center</p>
-        <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="iam-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- EC2 NGINX PROJECT -->
-<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-  <div class="portfolio-content h-100">
-    
-    <img src="assets/img/portfolio/nginx-webserver.png" class="img-fluid" alt="EC2 Project">
-
-    <div class="portfolio-info">
-      <h4>EC2 NGINX Deployment</h4>
-      <p>Terraform + Ansible</p>
-
-      <a href="assets/img/portfolio/nginx-webserver.png" 
-         class="glightbox preview-link">
-        <i class="bi bi-zoom-in"></i>
-      </a>
-
-      <a href="ec2-nginx-project.html" 
-         class="details-link">
-        <i class="bi bi-link-45deg"></i>
-      </a>
-
-    </div>
-  </div>
-</div>
-<!-- END -->
-
-  <!-- Project 2 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Cloud Projects</h4>
-        <p>AWS IAM & Identity Center implementation</p>
-        <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="vpc-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- Project 3 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>AWS Security</h4>
-        <p>AWS Organizations & Access Management</p>
-        <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="organization-access-management.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-  <!-- Project 4 -->
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-    <div class="portfolio-content h-100">
-      <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Documentation</h4>
-        <p>AWS Project Documentation</p>
-        <a href="assets/img/portfolio/books-1.jpg" title="Documentation" data-gallery="portfolio-gallery-books" class="glightbox preview-link">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-        <a href="documentation-project.html" title="More Details" class="details-link">
-          <i class="bi bi-link-45deg"></i>
-        </a>
-      </div>
-    </div>
-  </div><!-- End Portfolio Item -->
-
-</div><!-- End Portfolio Container -->
         </div>
 
+        <div class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+          <h3>Earlier Cloud Labs</h3>
+          <p>AWS fundamentals and deployment labs that support the newer monitoring projects.</p>
+        </div>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="180">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-security">Security</li>
+            <li data-filter=".filter-compute">Compute</li>
+            <li data-filter=".filter-networking">Networking</li>
+            <li data-filter=".filter-hosting">Hosting</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="220">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-security">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="AWS IAM and Identity Center project screenshot">
+                <div class="portfolio-info">
+                  <h4>AWS IAM & Identity Center</h4>
+                  <p>Controlled AWS access for admins and learners using IAM, MFA, and least-privilege permissions.</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="AWS IAM and Identity Center" data-gallery="portfolio-gallery-security" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="iam-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-compute">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/nginx-webserver-successfully-deployed.png" class="img-fluid" alt="EC2 NGINX deployment screenshot">
+                <div class="portfolio-info">
+                  <h4>EC2 NGINX Deployment</h4>
+                  <p>Repeatable Ubuntu web server deployment with Terraform, SSH access, NGINX, and browser verification.</p>
+                  <a href="assets/img/portfolio/nginx-webserver-successfully-deployed.png" title="EC2 NGINX Deployment" data-gallery="portfolio-gallery-compute" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="ec2-nginx-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-networking">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/VPC CREATED.PNG" class="img-fluid" alt="AWS VPC project screenshot">
+                <div class="portfolio-info">
+                  <h4>AWS VPC Architecture</h4>
+                  <p>Secure network foundation with public/private segmentation, routing, and controlled internet access.</p>
+                  <a href="assets/img/portfolio/VPC CREATED.PNG" title="AWS VPC Architecture" data-gallery="portfolio-gallery-networking" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="vpc-project.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-security">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="AWS Organizations and access management screenshot">
+                <div class="portfolio-info">
+                  <h4>AWS Organizations</h4>
+                  <p>Centralized multi-account access governance using AWS Organizations and Identity Center.</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="AWS Organizations" data-gallery="portfolio-gallery-security" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="organization-access-management.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hosting">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/S3 Bucket created.PNG" class="img-fluid" alt="AWS S3 static website hosting screenshot">
+                <div class="portfolio-info">
+                  <h4>S3 Static Website Hosting</h4>
+                  <p>Low-cost static website hosting with bucket policy, public access validation, and deployment evidence.</p>
+                  <a href="assets/img/portfolio/S3 Bucket created.PNG" title="S3 Static Website Hosting" data-gallery="portfolio-gallery-hosting" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="s3-website.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hosting">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="AWS project documentation screenshot">
+                <div class="portfolio-info">
+                  <h4>Project Documentation</h4>
+                  <p>Clear build notes, screenshots, validation steps, and troubleshooting records for AWS support handover.</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="AWS Project Documentation" data-gallery="portfolio-gallery-hosting" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -767,200 +660,122 @@ I build and document <strong>real-world cloud solutions</strong> using AWS, focu
 
 </section><!-- /Services Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
+    <!-- Recruiter Value Section -->
+    <section id="recruiter-value" class="recruiter-value section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p> Hear what people say about my work and dedication in cloud computing, IT support, and tech projects.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>    "Uche Favour is highly knowledgeable and professional in cloud computing and IT support. She communicates clearly and delivers results efficiently."</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Ekwutosinam Cynthia Okey</h3>
-                <h4>Account &amp; Customer Success Manager</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>   "Working with Favour was an excellent experience. Her dedication and problem-solving skills are top-notch."</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Charlse Ugwu</h3>
-                <h4>Project Manager</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>    “Working with Favour was a pleasure—her technical knowledge and problem-solving skills significantly improved our IT operations.”</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Smart (Chukwunonso) Agbawo</h3>
-                <h4>Devops Engineer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>   "Favour brings energy, precision, and creativity to every project. Highly recommended for tech and IT support tasks."</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Emmanuel Enamejewa</h3>
-                <h4>Cyber Security</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span> “Favour’s attention to detail and proactive approach made our cloud projects seamless. She consistently delivers beyond expectations.”</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Michael Brown</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+        <h2>What I Bring</h2>
+        <p>
+          A support-first approach to cloud work: clear communication, organized evidence, and practical troubleshooting.
+        </p>
       </div>
 
-    </section><!-- /Testimonials Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="value-item h-100">
+              <i class="bi bi-search"></i>
+              <h3>Evidence-Based Troubleshooting</h3>
+              <p>I document checks, screenshots, logs, and validation steps so issues can be reviewed and handed over clearly.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="value-item h-100">
+              <i class="bi bi-cloud-arrow-up"></i>
+              <h3>Practical AWS Delivery</h3>
+              <p>My projects show working cloud scenarios across access management, networking, monitoring, hosting, and automation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="value-item h-100">
+              <i class="bi bi-chat-dots"></i>
+              <h3>User-Focused Support</h3>
+              <p>I combine technical investigation with calm communication, structured follow-up, and clear next steps for users and teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Recruiter Value Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p> Have a project or question? I’d love to hear from you. Reach out anytime!</p>
-      </div><!-- End Section Title -->
+        <p>Open to cloud support, technical support, helpdesk, and junior cloud operations opportunities.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
           <div class="col-lg-5">
-
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
-                  <p>Ojo Lagos,Nigeria NG 102101</p>
+                  <h3>Location</h3>
+                  <p>Lagos, Nigeria</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+234 703030-6473</p>
+                  <h3>Phone</h3>
+                  <p>+234 703 030 6473</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
+                  <h3>Email</h3>
                   <p>ucfavour23@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <iframe " frameborder="0" style="border:0; width: 100%; h"></iframe>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-github flex-shrink-0"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <p><a href="https://github.com/ucfavour23" target="_blank">github.com/ucfavour23</a></p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <form action="https://formspree.io/f/xwvwwdwp" method="post"  data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xwvwwdwp" method="post" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
 
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
 
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
 
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
-
       </div>
 
     </section><!-- /Contact Section -->
@@ -970,16 +785,14 @@ I build and document <strong>real-world cloud solutions</strong> using AWS, focu
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center ">
-        <p>© 2026 <span>Copyright</span> <strong class="px-1 sitename">Uchechi Favour Hyginus</strong> <span> | Technical & Cloud Support Portfolio</span></p>
+        <p>&copy; 2026 <strong class="px-1 sitename">Uchechi Favour Hyginus</strong> <span> | Technical & Cloud Support Portfolio</span></p>
       </div>
-      <div class="credits"></div>
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://ucfavourcloud.online/"><span>Uchechi Favour Hyginus</span></a> Distributed by <a href="https://themewagon.com"><ucfavourcloud class="online"></i>ucfavour23@gmail.com</a>
+      <div class="credits">
+        Designed by <a href="https://ucfavourcloud.online/">Uchechi Favour Hyginus</a> |
+        <a href="mailto:ucfavour23@gmail.com">ucfavour23@gmail.com</a>
       </div>
 
+    </div>
   </footer>
 
   <!-- Scroll Top -->
@@ -1002,7 +815,6 @@ I build and document <strong>real-world cloud solutions</strong> using AWS, focu
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
 </body>
 
 </html>

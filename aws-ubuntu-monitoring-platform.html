@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NovaRetail AWS Ubuntu Monitoring Platform - UC Favour Hyginus</title>
+  <meta content="Terraform AWS monitoring infrastructure with VPC, ALB, Auto Scaling, Ubuntu EC2, health checks, and CloudWatch." name="description">
+  <meta content="AWS, Terraform, Ubuntu, ALB, Auto Scaling, CloudWatch, VPC" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Uchechi Favour Hyginus" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Uchechi Favour Hyginus</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://x.com/ucfavour23" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      <a href="mailto:ucfavour23@gmail.com"><i class="bi bi-envelope"></i></a>
+      <a href="https://linkedin.com/in/uchechifavour" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/ucfavour23" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">NovaRetail AWS Ubuntu Monitoring Platform</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": { "delay": 5000 },
+                  "slidesPerView": "auto",
+                  "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-init-success.png" alt="Terraform init success"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-plan-success.png" alt="Terraform plan success"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-apply-success.png" alt="Terraform apply success"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/two-EC2-instance created.png" alt="Two EC2 instances created"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Load-Balancer.png" alt="Application Load Balancer"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Healthy-target-group.png" alt="Healthy target group"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/application-running.png" alt="Monitoring application running"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Sreenshots-health-endpoint.png" alt="Health endpoint"></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/CloudWatch-Alarm.png" alt="CloudWatch CPU alarm"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: AWS Infrastructure / Monitoring</li>
+                <li><strong>Organization</strong>: NovaRetail Engineering Operations</li>
+                <li><strong>Scenario</strong>: Scaling an internal monitoring app with load balancing and recovery</li>
+                <li><strong>Tools</strong>: AWS VPC, EC2, ALB, Auto Scaling, CloudWatch, Terraform, Ubuntu, Node.js</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/ucfavour23/aws-ubuntu-monitoring-platform" target="_blank">View Repository</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Retail operations team needed a more resilient internal monitoring platform</h2>
+              <p>
+                NovaRetail's internal monitoring application had become important to engineering and operations teams, but a single-server setup created availability risk as usage increased.
+              </p>
+              <p>
+                I designed a Terraform-managed AWS environment with a custom VPC, two public subnets across Availability Zones, an Application Load Balancer, Ubuntu EC2 instances, target group health checks, and an Auto Scaling Group to maintain healthy capacity.
+              </p>
+              <p>
+                The result is a documented infrastructure build that demonstrates load balancing, automated recovery, CloudWatch CPU monitoring, operational troubleshooting, and deployment evidence through screenshots.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="evidence-grid" data-aos="fade-up" data-aos-delay="150">
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-init-success.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-init-success.png" alt="Terraform init"><span>Terraform init</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-plan-success.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-plan-success.png" alt="Terraform plan"><span>Terraform plan</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-apply-success.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/terraform-apply-success.png" alt="Terraform apply"><span>Terraform apply</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/two-EC2-instance created.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/two-EC2-instance created.png" alt="Two EC2 instances"><span>EC2 instances</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/Load-Balancer.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Load-Balancer.png" alt="Load balancer"><span>Load balancer</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/Healthy-target-group.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Healthy-target-group.png" alt="Healthy targets"><span>Healthy targets</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/application-running.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/application-running.png" alt="Application running"><span>Application running</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/Sreenshots-health-endpoint.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/Sreenshots-health-endpoint.png" alt="Health endpoint"><span>Health endpoint</span></a>
+          <a href="assets/img/portfolio/aws-ubuntu-monitoring-platform/CloudWatch-Alarm.png" class="glightbox" data-gallery="aws-monitoring-evidence"><img src="assets/img/portfolio/aws-ubuntu-monitoring-platform/CloudWatch-Alarm.png" alt="CloudWatch alarm"><span>CloudWatch alarm</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© 2026 <strong class="px-1 sitename">Uchechi Favour Hyginus</strong> | Technical & Cloud Support Portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
