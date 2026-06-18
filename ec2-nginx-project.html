@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>EC2 NGINX Project - UC Favour Hyginus</title>
-  <meta content="AWS EC2 deployment using Terraform and Ansible" name="description">
+  <title>EC2 NGINX Automation with Terraform and Ansible - UC Favour Hyginus</title>
+  <meta content="AWS EC2 NGINX web server deployment automated with Terraform provisioning, SSH key generation, security group configuration, Ansible, and browser validation." name="description">
   <meta content="AWS, Terraform, Ansible, NGINX, EC2, DevOps" name="keywords">
 
   <link href="assets/img/favicon.png" rel="icon">
@@ -60,11 +60,11 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">AWS EC2 NGINX Deployment</h1>
+        <h1 class="mb-2 mb-lg-0">EC2 NGINX Automation with Terraform and Ansible</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">EC2 NGINX Project</li>
+            <li class="current">EC2 NGINX Automation</li>
           </ol>
         </nav>
       </div>
@@ -96,15 +96,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/terraform-init.png" alt="EC2 created successfully">
+                  <img src="assets/img/portfolio/terraform-init.png" alt="Terraform init for EC2 deployment">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/terraform-plan.png" alt="Connected to EC2 instance">
+                  <img src="assets/img/portfolio/terraform-plan.png" alt="Terraform plan for EC2 deployment">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/terraforn-apply.png" alt="Terraform apply output">
+                  <img src="assets/img/portfolio/terraforn-apply.png" alt="Terraform apply output creating EC2 resources">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/connected-to-ec2-instance.png" alt="SSH connection to EC2 instance">
                 </div>
 
                 <div class="swiper-slide">
@@ -124,28 +128,37 @@
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Cloud Engineering / Linux Web Server Deployment</li>
-                <li><strong>Scenario</strong>: A small operations team needed a repeatable way to launch and verify a Linux web server</li>
+                <li><strong>Category</strong>: Infrastructure as Code / Configuration Management</li>
+                <li><strong>Scenario</strong>: Repeatable EC2 web server provisioning and NGINX configuration</li>
                 <li><strong>Project date</strong>: April 2026</li>
-                <li><strong>Tools</strong>: AWS, Terraform, Ansible, NGINX, SSH</li>
+                <li><strong>Tools</strong>: AWS EC2, Terraform, Ansible, NGINX, SSH, Security Groups</li>
                 <li><strong>GitHub</strong>: <a href="https://github.com/ucfavour23/ec2-nginx-terraform-ansible" target="_blank">View Project</a></li>
               </ul>
             </div>
 
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-  <h2>Repeatable EC2 web server deployment with Terraform and NGINX</h2>
+  <h2>Repeatable Linux web server deployment using IaC and configuration automation</h2>
   <p>
-    The operations team needed a consistent way to provision a Linux server, configure web service access, and verify that the application endpoint was reachable.
+    This project shows a practical deployment workflow for launching a Linux web server on AWS without relying on manual console steps.
   </p>
   <p>
-    I used Terraform to provision the EC2 infrastructure, connected to the Ubuntu instance through SSH, installed and managed NGINX, configured the required access rules, and validated the deployment from the browser.
+    I used Terraform to provision the EC2 instance, generate the SSH key pair, create the AWS key pair, configure security group access for SSH and HTTP, and output the public IP for validation.
   </p>
   <p>
-    This project demonstrates infrastructure as code, Linux administration, web server configuration, network access troubleshooting, and deployment verification.
+    I then used Ansible to update packages, install NGINX, start the service, and confirm the web server was reachable from the browser. The project demonstrates infrastructure as code, Linux administration, configuration management, network access troubleshooting, and deployment evidence.
   </p>
 </div>
           </div>
 
+        </div>
+
+        <div class="evidence-grid" data-aos="fade-up" data-aos-delay="150">
+          <a href="assets/img/portfolio/terraform-init.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/terraform-init.png" alt="Terraform init"><span>Terraform init</span></a>
+          <a href="assets/img/portfolio/terraform-plan.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/terraform-plan.png" alt="Terraform plan"><span>Terraform plan</span></a>
+          <a href="assets/img/portfolio/terraforn-apply.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/terraforn-apply.png" alt="Terraform apply"><span>Terraform apply</span></a>
+          <a href="assets/img/portfolio/connected-to-ec2-instance.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/connected-to-ec2-instance.png" alt="SSH connection"><span>SSH connection</span></a>
+          <a href="assets/img/portfolio/nginx-installed.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/nginx-installed.png" alt="NGINX installed"><span>NGINX installed</span></a>
+          <a href="assets/img/portfolio/nginx-webserver-successfully-deployed.png" class="glightbox" data-gallery="ec2-nginx-evidence"><img src="assets/img/portfolio/nginx-webserver-successfully-deployed.png" alt="NGINX web server live"><span>Browser validation</span></a>
         </div>
       </div>
     </section>
@@ -154,11 +167,8 @@
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <div class="copy write text center ">
-        <p><span>Uchechi</span> <strong class="px-1 sitename">My Cloud Portfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://ucfavourcloud.online/">UC Favour</a> Distributed by <a href="https://ucfavourcloud.online">Uchechi</a>
+      <div class="copyright text-center">
+        <p>&copy; 2026 <strong class="px-1 sitename">Uchechi Favour Hyginus</strong> | Technical & Cloud Support Portfolio</p>
       </div>
     </div>
   </footer>
